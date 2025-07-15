@@ -1,0 +1,21 @@
+<header>
+  <!-- Logo -->
+  <div class="header-left">
+    <img src="assets/logo-tickets-sem-fundo.png" alt="Logo" class="logo" (click)="navigation.voltarParaHome()" />
+  </div>
+
+  <!-- Barra de Pesquisa -->
+  <div class="header-center">
+    <input type="text" placeholder="Buscar shows, eventos..." [(ngModel)]="busca" />
+    <button class="primary" type="button">Pesquisar</button>
+  </div>
+
+  <!-- Ícones e Ações -->
+  <div class="header-right">
+    <img src="assets/carshop.png" alt="Carrinho" class="icon" (click)="navigation.irParaCarrinho()" />
+    <button class="usuario-btn">
+      <img src="assets/user.png" alt="Usuário" class="icon user-icon" (click)="navigation.irParaLogin()" />
+      Olá, {{ usuarioNome || 'visitante' }}
+    </button>
+  </div>
+</header>

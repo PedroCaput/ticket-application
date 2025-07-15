@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Entrar – IngressoSA</title>
+  <link rel="stylesheet" href="login-page.component.css">
+</head>
+<body>
+  <main class="login-page">
+    <form class="login-form" action="/auth/login" method="POST">
+      <img src="assets/logo-tickets-sem-fundo.png" alt="Logo" class="logo" (click)="navigation.voltarParaHome()" />
+      <h1>Entrar</h1>
+
+      <label for="email">E‑mail ou CPF</label>
+      <input type="text" id="email" name="email" required autocomplete="username">
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" required autocomplete="current-password">
+
+      <div class="form-options">
+        <label>
+          <input type="checkbox" name="remember"> Lembrar-me
+        </label>
+        <a href="/auth/recover" class="forgot-password">Esqueceu a senha?</a>
+      </div>
+
+      <button type="submit" class="login-button">Entrar</button>
+
+      <p class="register-link">
+        Ainda não tem conta? <a href="/auth/register">Cadastre-se</a>
+      </p>
+    </form>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>

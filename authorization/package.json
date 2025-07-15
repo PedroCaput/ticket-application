@@ -1,0 +1,30 @@
+{
+  "name": "authorization",
+  "version": "1.0.0",
+  "description": "an authorization application for tickets company",
+  "main": "index.js",
+  "author": "Pedro Henrique Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "authorization": "file:",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^2.0.22",
+    "pg-promise": "^11.4.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.17"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.ts"
+  }
+}

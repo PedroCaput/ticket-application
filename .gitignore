@@ -1,1 +1,15 @@
-*node_modules
+# IDEs e editores
+.vscode/
+
+# Pastas padrão de projetos Angular/Node
+node_modules/
+.angular/
+dist/
+e2e/
+
+# Pastas locais do projeto
+aula-de-autenticacao/
+frontend exportado da hostinger/
+
+# Imagens específicas (evite nomes com espaço, se possível)
+popup de login.jpg
