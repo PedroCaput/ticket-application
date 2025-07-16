@@ -1,1 +1,15 @@
-<p>listing works!</p>
+<div class="event-grid">
+  <div class="event-card" *ngFor="let event of events">
+    <img [src]="event.photo" [alt]="event.name" />
+    <div class="event-info">
+      <div class="date-time">
+        <span>{{ event.date | date:'dd/MM/yyyy' }} – {{ event.hour }}</span><br />
+        <span>Abertura: {{ event.hour }}</span><br />
+        <span>Censura: {{ event.mininumAge }}+</span>
+      </div>
+      <div class="city">{{ event.city }} – {{ event.state }}</div>
+      <div class="venue">{{ event.houseName }}</div>
+      <div class="title">{{ event.name }}</div>
+    </div>
+  </div>
+</div>
