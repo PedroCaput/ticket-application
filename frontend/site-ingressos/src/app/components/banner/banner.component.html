@@ -1,1 +1,18 @@
-<p>O banner está funfando parça</p>
+<div class="banner-container">
+  <div class="banner-slide" *ngFor="let imagem of imagens; let i = index"
+       [class.ativo]="i === slideAtual"
+       [style.backgroundImage]="'url(' + imagem + ')'">
+  </div>
+
+  <!-- Setas -->
+  <button class="seta esquerda" (click)="anterior()">&#10094;</button>
+  <button class="seta direita" (click)="proximo()">&#10095;</button>
+
+  <!-- Indicadores -->
+  <div class="indicadores">
+    <span *ngFor="let img of imagens; let i = index"
+          [class.ativo]="i === slideAtual"
+          (click)="irParaSlide(i)">
+    </span>
+  </div>
+</div>
