@@ -1,0 +1,26 @@
+/* Garante que a página use o viewport inteiro */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Faz o layout vertical ocupar toda a altura */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Garante que o conteúdo (listing) cresça no centro */
+.conteudo-principal {
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+/* Opcional: se o footer não for fixo */
+app-footer {
+  margin-top: auto;
+}
