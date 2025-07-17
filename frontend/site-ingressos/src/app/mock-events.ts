@@ -12,7 +12,8 @@ export const MOCK_EVENTS: EventDetails[] = [
         hour: '20:00', 
         houseName: 'CTN',
         address: 'Rua Jacofer, 615 - Bairro do Limão - São Paulo - SP', 
-        mininumAge: '18 Anos - 12 a 16 anos acompanhados pelos pais ou responsáveis' 
+        mininumAge: '18 Anos - 12 a 16 anos acompanhados pelos pais ou responsáveis',
+        category: 'Show'
     },
     { 
         id: 2, 
@@ -25,7 +26,8 @@ export const MOCK_EVENTS: EventDetails[] = [
         hour: '22:00', 
         houseName: 'Espaço Unimed',
         address: 'Rua Tagipuru, 795 - Barra Funda - São Paulo - SP', 
-        mininumAge: '18 Anos - 12 a 16 anos acompanhados pelos pais ou responsáveis' 
+        mininumAge: '18 Anos - 12 a 16 anos acompanhados pelos pais ou responsáveis',
+        category: 'Show' 
     },
     { 
         id: 3, 
@@ -38,7 +40,8 @@ export const MOCK_EVENTS: EventDetails[] = [
         hour: '16:00', 
         houseName: 'Centro de Convenções UFOP',
         address: 'Rua Diogo de Vasconcelos, S/N - Pilar - Ouro Preto - MG', 
-        mininumAge: '18 Anos' 
+        mininumAge: '18 Anos',
+        category: 'Festival' 
     },
     { 
         id: 4, 
@@ -51,6 +54,7 @@ export const MOCK_EVENTS: EventDetails[] = [
         hour: '19:00', 
         houseName: 'Espaço Win',
         address: 'Av. Dom Pedro II, 2.055 - Campestre - Santo André - SP', 
-        mininumAge: '18 Anos - 14 anos somente acompanhado dos pais ou responsáveis' 
+        mininumAge: '18 Anos - 14 anos somente acompanhado dos pais ou responsáveis',
+        category: 'Jantar Show' 
     },
 ];

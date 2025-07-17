@@ -27,7 +27,7 @@ export class BannerComponent implements OnInit, OnDestroy {
   }
 
   iniciarCarrossel() {
-    this.intervalo = setInterval(() => this.proximo(), 2500); // muda a cada 1,5 segundo 
+    this.intervalo = setInterval(() => this.proximo(), 2500); 
   }
 
   proximo() {

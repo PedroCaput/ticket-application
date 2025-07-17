@@ -9,5 +9,6 @@ export interface EventDetails {
     hour: string,
     houseName: string,
     address: string,
-    mininumAge: string
+    mininumAge: string,
+    category: string
 }

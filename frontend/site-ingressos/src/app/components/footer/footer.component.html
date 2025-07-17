@@ -1,1 +1,82 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="footer-row top">
+    <div class="footer-col"><img src="assets/logo-tickets-sem-fundo.png" alt="Logo" class="footer-logo" (click)="navigation.voltarParaHome()" /></div>
+    <div class="footer-col">
+        <a routerLink="/">
+             <strong>
+                Home
+             </strong>
+        </a>
+    </div>
+    <div class="footer-col">
+        <a routerLink="/sobre">
+            <strong>
+                Sobre
+            </strong>
+        </a>
+    </div>
+    <div class="footer-col">
+        <a routerLink="/contato">
+            <strong>
+                Fale Conosco
+            </strong>
+        </a>
+    </div>
+    <div class="footer-col">
+        <a routerLink="/termos">
+            <strong>
+                Termos e Políticas
+            </strong>
+        </a>
+    </div>
+  </div>
+
+  <div class="footer-row bottom">
+    <div class="footer-col">
+      <strong>Cidades</strong>
+      <ul>
+        <li *ngFor="let cidade of cidadesUnicas">{{ cidade }}</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Categorias</strong>
+      <ul>
+        <li *ngFor="let categoria of categoriasUnicas">{{ categoria }}</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Meu Acesso</strong>
+      <ul>
+        <li><a routerLink="/login">Entrar</a></li>
+        <li><a routerLink="/cadastro">Cadastrar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Contato</strong>
+      <ul>
+        <li>
+            Email: 
+            <a href="mailto:contato@tickets.com">contato@tickets.com</a>
+        </li>
+        <li>Tel: (11) 1234-5678</li>
+      </ul>
+    </div>
+<div class="footer-col">
+  <strong>Redes Sociais</strong>
+  <ul class="social-icons">
+    <li>
+      <a href="https://www.linkedin.com/in/pedrocaput/" target="_blank" rel="noopener">
+        <img src="assets/icons/linkedin.png" alt="LinkedIn" />
+        LinkedIn
+     </a>
+    </li>
+    <li>
+      <a href="https://github.com/PedroCaput" target="_blank" rel="noopener">
+        <img src="assets/icons/github.png" alt="GitHub" />
+        GitHub
+      </a>
+    </li>
+  </ul>
+</div>
+  </div>
+</footer>
