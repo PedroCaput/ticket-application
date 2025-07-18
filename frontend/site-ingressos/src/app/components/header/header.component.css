@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #eee;
   padding: 0.75rem 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -21,17 +21,47 @@ header {
 .header-center input {
   width: 100%;
   max-width: 400px;
+  height: 19px;
   padding: 0.5rem 1rem;
   border-radius: 25px;
-  border: 1px solid #ccc;
+  border: 1px solid #133e61;
 }
 
 .header-center button {
-  width: 30%;
-  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #133e61;
+  color: white;
+  border: 2px solid #133e61;
   padding: 0.5rem 1rem;
   border-radius: 25px;
-  border: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  width: 100%;
+  max-width: 150px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+/* Inverter cores no hover */
+button.primary:hover {
+  background-color: white;
+  color: #133e61;
+}
+
+/* Recuo visual ao clicar */
+button.primary:active {
+  transform: translateY(2px); /* recua 2px para baixo */
 }
 
 .header-right {
@@ -51,11 +81,12 @@ header {
   background: none;
   border: none;
   font-weight: 600;
-  color: #333;
+  color: #133e61;
   cursor: pointer;
   gap: 0.5rem;
 }
 
 .user-icon {
   height: 24px;
+  color: #133e61;
 }

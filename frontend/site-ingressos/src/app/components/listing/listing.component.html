@@ -1,15 +1,19 @@
 <div class="event-grid">
-  <div class="event-card" *ngFor="let event of events">
-    <img [src]="event.photo" [alt]="event.name" />
+  <a
+    *ngFor="let e of events"
+    [routerLink]="['/detalhes', slugify(e.name)]"
+    class="event-card"
+  >
+    <img [src]="e.photo" [alt]="e.name" />
     <div class="event-info">
       <div class="date-time">
-        <span>{{ event.date | date:'dd/MM/yyyy' }} – {{ event.hour }}</span><br />
-        <span>Abertura: {{ event.hour }}</span><br />
-        <span>Censura: {{ event.mininumAge }}+</span>
+        <span>{{ e.date | date: 'dd/MM/yyyy' }} – {{ e.hour }}</span><br />
+        <span>Abertura: {{ e.hour }}</span><br />
+        <span>Censura: {{ e.mininumAge }}+</span>
       </div>
-      <div class="city">{{ event.city }} – {{ event.state }}</div>
-      <div class="venue">{{ event.houseName }}</div>
-      <div class="title">{{ event.name }}</div>
+      <div class="city">{{ e.city }} – {{ e.state }}</div>
+      <div class="venue">{{ e.houseName }}</div>
+      <div class="title">{{ e.name }}</div>
     </div>
-  </div>
+  </a>
 </div>
