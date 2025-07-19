@@ -57,4 +57,18 @@ export const MOCK_EVENTS: EventDetails[] = [
         mininumAge: '18 Anos - 14 anos somente acompanhado dos pais ou responsáveis',
         category: 'Jantar Show' 
     },
+    { 
+        id: 5, 
+        name: 'Jantar Show Frejat', 
+        city: 'Santo André', 
+        state: 'SP',
+        photo: 'assets/frejat.webp', 
+        availableTicketUnits: 2000,
+        date: new Date('2025-08-22'), 
+        hour: '19:00', 
+        houseName: 'Espaço Win',
+        address: 'Av. Dom Pedro II, 2.055 - Campestre - Santo André - SP', 
+        mininumAge: '18 Anos - 14 anos somente acompanhado dos pais ou responsáveis',
+        category: 'Jantar Show' 
+    },
 ];
